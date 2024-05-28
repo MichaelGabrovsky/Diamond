@@ -1,0 +1,114 @@
+:root{
+    --black-blue: #192F43;
+    --dark-blue: #17446E;
+    --blue: #6A98C3;
+    --light-blue: #A8CCED;
+    --white-blue: #C1E1FF;
+    --white-light-blue: #E0F0FF;
+}
+
+.reset {
+    all: unset;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* padding: 10px; */
+    font-size: 2rem;
+    min-height: 4rem;
+    background-color: white;
+    border-bottom: 3px solid var(--black-blue);
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+header li{
+    border-right: 3px solid var(--black-blue);
+    height: 103px;
+    text-align: center;
+}
+
+
+nav{
+    font-size: 2rem;
+    min-height: 3rem;
+    background-color: white;
+    border-bottom: 3px solid var(--black-blue);
+}
+
+footer{
+    font-size: 1.5rem;
+    color:var(--white-light-blue);
+    min-height: 20rem;
+    background-color: var(--dark-blue);
+    border-bottom: 2px solid var(--black-blue);
+}
+
+.hero{
+    min-height: 20rem;
+    background-color: var(--blue);
+    border-bottom: 2px solid var(--black-blue);
+}
+
+.vip{
+    font-size: 2rem;
+    min-height: 4rem;
+    background-color: white;
+    border-bottom: 2px solid var(--black-blue);
+}
+
+.recommended{
+    font-size: 1.75rem;
+    min-height: 15rem;
+    background-color: white;
+    border-bottom: 2px solid var(--black-blue);
+}
+
+.new-release{
+    font-size: 1.75rem;
+    min-height: 15rem;
+    background-color: white;
+    border-bottom: 2px solid var(--black-blue);
+}
+
+.free-to-play{
+    font-size: 1.75rem;
+    min-height: 15rem;
+    background-color: white;
+    border-bottom: 2px solid var(--black-blue);
+}
+
+.header-image{
+    height: 103px;
+}
+
+.vertical-line{
+    border: 1.5px solid var(--black-blue);
+    height: 100px;
+}
+
+.search-bar{
+    width: 50%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid var(--blue);
+    width: 20%;
+    height: 2rem;
+    font-size: 14px;
+}
+
+.search-bar:focus{
+    outline:none;
+    border-bottom: 2px solid var(--black-blue);
+}
