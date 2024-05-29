@@ -1,7 +1,7 @@
 :root{
     --black-blue: #192F43;
     --dark-blue: #17446E;
-    --blue: #6A98C3;
+    --blue: #8fcaf6;
     --light-blue: #A8CCED;
     --white-blue: #C1E1FF;
     --white-light-blue: #E0F0FF;
@@ -16,7 +16,7 @@ header{
     flex-direction: row;
     align-items: center;
     /* padding: 10px; */
-    font-size: 2rem;
+    font-size: 1rem;
     min-height: 4rem;
     background-color: white;
     border-bottom: 3px solid var(--black-blue);
@@ -35,9 +35,12 @@ header ul {
 }
 
 header li{
-    border-right: 3px solid var(--black-blue);
-    height: 103px;
+    /*border-right: 3px solid var(--black-blue);*/
+    height: 50px;
     text-align: center;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -115,14 +118,19 @@ footer{
     border-bottom: 2px solid var(--black-blue);
 }
 
+.search-bar-box{
+    width:700px;
+    justify-content: left;
+}
+
 .header-image{
     width: 50px;
     height: 50px;
 }
 
 .header-logo{
-    width: 147px;
-    height: 118/2px;
+    width: 100px;
+    height: 59px;
 }
 
 .row{
@@ -148,7 +156,7 @@ footer ul{
     font-size: 1.25rem;
 }
 
-.footer-logos{
+.icons{
     width: 18px;
     height:18px;
 }
@@ -162,7 +170,6 @@ footer .diamond-logo{
 }
 
 footer .diamond-logo img{
-    width: 250px;
-    height: 250px;
-    margin-bottom: -150px;
+    width: 400px;
+    margin-bottom: -120px;
 }
