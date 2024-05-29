@@ -50,7 +50,7 @@ nav{
 footer{
     font-size: 1.5rem;
     color:var(--white-light-blue);
-    min-height: 20rem;
+    min-height: 25rem;
     background-color: var(--dark-blue);
     border-bottom: 2px solid var(--black-blue);
 }
@@ -132,6 +132,9 @@ footer{
 .column{
     flex: 20%;
     padding: 20px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
 }
 
 footer ul{
@@ -139,4 +142,23 @@ footer ul{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.footer-logos{
+    width: 18px;
+    height:18px;
+}
+
+footer .diamond-logo{
+    min-height: 10rem;
+    background-color: var(--blue);
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .diamond-logo img{
+    width: 250px;
+    height: 250px;
+    margin-bottom: -150px;
 }
