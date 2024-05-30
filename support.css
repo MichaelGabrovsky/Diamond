@@ -1,7 +1,7 @@
 :root{
     --black-blue: #192F43;
     --dark-blue: #17446E;
-    --blue: #8fcaf6;
+    --blue: #6A98C3;
     --light-blue: #A8CCED;
     --white-blue: #C1E1FF;
     --white-light-blue: #E0F0FF;
@@ -15,7 +15,6 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* padding: 10px; */
     font-size: 1rem;
     min-height: 4rem;
     background-color: white;
@@ -35,7 +34,6 @@ header ul {
 }
 
 header li{
-    /*border-right: 3px solid var(--black-blue);*/
     height: 50px;
     text-align: center;
     display: flex ;
@@ -43,12 +41,8 @@ header li{
     justify-content: center;
 }
 
-
-nav{
-    font-size: 2rem;
-    min-height: 3rem;
-    background-color: white;
-    border-bottom: 3px solid var(--black-blue);
+main{
+    min-height: 70rem;
 }
 
 footer{
@@ -59,47 +53,14 @@ footer{
     border-bottom: 2px solid var(--black-blue);
 }
 
-.hero{
-    min-height: 20rem;
-    background-color: var(--blue);
-    border-bottom: 2px solid var(--black-blue);
-}
-
-.vip{
-    font-size: 2rem;
-    min-height: 4rem;
-    background-color: white;
-    border-bottom: 2px solid var(--black-blue);
-}
-
-.recommended{
-    font-size: 1.75rem;
-    min-height: 15rem;
-    background-color: white;
-    border-bottom: 2px solid var(--black-blue);
-}
-
-.new-release{
-    font-size: 1.75rem;
-    min-height: 15rem;
-    background-color: white;
-    border-bottom: 2px solid var(--black-blue);
-}
-
-.free-to-play{
-    font-size: 1.75rem;
-    min-height: 15rem;
-    background-color: white;
-    border-bottom: 2px solid var(--black-blue);
-}
-
 .header-image{
-    height: 103px;
+    width: 50px;
+    height: 50px;
 }
 
-.vertical-line{
-    border: 1.5px solid var(--black-blue);
-    height: 100px;
+.header-logo{
+    width: 100px;
+    height: 59px;
 }
 
 .search-bar{
@@ -123,20 +84,37 @@ footer{
     justify-content: left;
 }
 
-.header-image{
-    width: 50px;
-    height: 50px;
+.title{
+    background-color: white;
+    min-height: 10rem;
 }
 
-.header-logo{
-    width: 100px;
-    height: 59px;
+main h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 800%;
+    padding-left: 60%;
+    padding-top: 250px;
+}
+
+.bar{
+    background-color: var(--blue);
+    min-height: 15rem;
+}
+
+.recommended-article{
+    background-color: white;
+    min-height: 30rem;
+}
+
+main li{
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 5px solid var(--black-blue);
 }
 
 .row{
     display: flex;
     flex-wrap: wrap;
-    }
+}
 
 .column{
     flex: 20%;
