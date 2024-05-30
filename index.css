@@ -112,10 +112,6 @@ footer{
     font-family: 'Roboto', sans-serif;
 }
 
-.header-image{
-    height: 103px;
-}
-
 .vertical-line{
     border: 1.5px solid var(--black-blue);
     height: 100px;
