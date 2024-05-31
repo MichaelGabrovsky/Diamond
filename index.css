@@ -243,10 +243,19 @@ footer .diamond-logo img{
     height: 150px;
     background-color: var(--blue);
     border: none;
-    color:#17446E;
+    color:var(--dark-blue);
     font-family: 'Rubik', sans-serif;
     font-size: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition-duration: 0.4s;
 }
+
+.buy-now-button:hover {
+    background-color: var(--black-blue);
+    color: white;
+}
+
 .slideshow-container {
     position: relative;
     max-width: 100%;
