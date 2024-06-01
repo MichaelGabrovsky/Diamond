@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="carousel.css" />
+    <script src="carousel.js"></script>
     <title>Diamond</title>
     <link rel="icon" href="assets/website-icon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -79,50 +80,25 @@
     </nav>
     <main>
         <section class="hero">
-            <section class="carousel" aria-label="Gallery">
-                <ol class="carousel__viewport">
-                  <li id="carousel__slide1"
-                      tabindex="0"
-                      class="carousel__slide">
-                      <div class="hero-image"><img src="assets/hero-image1.png"
-                        width="1500"
-                        ></div>
-                    <div class="carousel__snapper">
-                      <a href="#carousel__slide4"
-                         class="carousel__prev">Go to last slide</a>
-                      <a href="#carousel__slide2"
-                         class="carousel__next">Go to next slide</a>
-                    </div>
-                  </li>
-                  <li id="carousel__slide2"
-                      tabindex="0"
-                      class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide1"
-                       class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide3"
-                       class="carousel__next">Go to next slide</a>
-                  </li>
-                  <li id="carousel__slide3"
-                      tabindex="0"
-                      class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide2"
-                       class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide4"
-                       class="carousel__next">Go to next slide</a>
-                  </li>
-                  <li id="carousel__slide4"
-                      tabindex="0"
-                      class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide3"
-                       class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide1"
-                       class="carousel__next">Go to first slide</a>
-                  </li>
-                </ol>
-            </section>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img src="assets/hero-image1.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="assets/Diamond-Logo-With-Background.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="assets/diamond-premium.png" style="width:100%">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
             <!-- <div class="slideshow-container">
                  Full-width images with number and caption text
                 <div class="hero-image fade">
