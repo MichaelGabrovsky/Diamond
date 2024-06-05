@@ -69,8 +69,7 @@ footer{
 }
 
 .header-logo{
-    width: 90px;
-    height: 70px;
+    height: 65px;
 }
 
 .hero{
@@ -422,3 +421,41 @@ footer .diamond-logo img{
     margin: 20px auto 10px;
     color: var(--black-blue);
 }
+
+.box{
+    background-color: var(--light-blue);
+    padding: 100px;
+    margin: 200px;
+}
+
+.button{
+    height: 32px;
+    width: 64px;
+    background-color: var(--blue);
+    border: 1px solid var(--black-blue);
+    border-radius: 3px;
+}
+
+.big-text{
+    font-family: 'Rubik', sans-serif;
+    font-size: 800%;
+    padding-left: 60%;
+    padding-top: 250px;
+}
+
+.bar{
+    background-color: var(--blue);
+    min-height: 15rem;
+}
+
+.button{
+    height: 32px;
+    width: 64px;
+    background-color: var(--blue);
+    border: 1px solid var(--black-blue);
+    border-radius: 3px;
+}
+
+.space{
+    margin: 15px;
+  }
