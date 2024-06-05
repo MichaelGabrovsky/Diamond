@@ -97,15 +97,17 @@ footer{
     min-height: 15rem;
     background-color: white;
     border-bottom: 1px solid var(--black-blue);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Exo', sans-serif;
+    font-weight: 700;
 }
 
-.new-release{
+.new-release {
     font-size: 1.75rem;
     min-height: 15rem;
     background-color: white;
     border-bottom: 1px solid var(--black-blue);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Exo', sans-serif;
+    font-weight: 700;
 }
 
 .free-to-play{
@@ -113,7 +115,8 @@ footer{
     min-height: 15rem;
     background-color: white;
     border-bottom: 1px solid var(--black-blue);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Exo', sans-serif;
+    font-weight: 700;
 }
 
 .vertical-line{
@@ -379,4 +382,43 @@ footer .diamond-logo img{
     align-items: center;
     height: 50vh;
     margin: 0;
+}
+
+.image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px; /* Space between image wrappers */
+}
+
+.image-wrapper img {
+    width: 200px; /* Fixed width for images */
+    flex-shrink: 0;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for the shadow and scale */
+}
+
+.image-wrapper:hover img {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.19); /* Enhanced drop shadow effect on hover */
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    border: 2px solid var(--blue); /* Optional: Add a border on hover to highlight the image */
+}
+
+.price-tag {
+    background-color: var(--blue);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: -5px; /* Slight overlap with the image */
+    box-sizing: border-box;
+}
+
+.section-title {
+    font-size: 3rem;
+    text-align: left;
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto 10px;
+    color: var(--black-blue);
 }
