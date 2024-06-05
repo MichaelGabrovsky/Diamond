@@ -262,7 +262,6 @@ footer .diamond-logo img{
     margin: auto;
 }
 
-
 .numbertext {
     position: absolute;
     top: 8px;
@@ -325,4 +324,59 @@ footer .diamond-logo img{
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+.body-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: 0 auto; /* Center the carousel */
+}
+
+.body-carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    padding: 0; /* Remove any padding */
+}
+
+.body-carousel-images img {
+    width: calc(25% - 10px); /* Display 4 images at a time with margin */
+    flex-shrink: 0;
+    margin: 0 5px; /* Margin to add space between images */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the shadow */
+}
+
+.body-carousel-images img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.19); /* Enhanced drop shadow effect on hover */
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    border: 2px solid var(--blue); /* Optional: Add a border on hover to highlight the image */
+}
+
+.body-carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.body-carousel-button.prev {
+    left: 0;
+}
+
+.body-carousel-button.next {
+    right: 0;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
 }
