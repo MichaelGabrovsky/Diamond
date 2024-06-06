@@ -9,6 +9,9 @@
 
 .reset {
     all: unset;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header{
@@ -64,8 +67,8 @@ footer{
 }
 
 .header-image{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
 }
 
 .header-logo{
