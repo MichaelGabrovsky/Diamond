@@ -137,6 +137,10 @@ footer{
     width: 400px;
 }
 
+.extra{
+    margin: 100px 900px;
+}
+
 .title{
     font-family: 'Rubik', sans-serif;
     font-size: 50px;
@@ -460,17 +464,11 @@ footer .diamond-logo img{
     border-radius: 3px;
 }
 
-.big-text-right{
-    font-family: 'Rubik', sans-serif;
-    font-size: 800%;
-    padding-left: 60%;
-    padding-top: 250px;
-}
-
 .big-text{
     font-family: 'Rubik', sans-serif;
     font-size: 800%;
-    margin:0;
+    padding-left: 50%;
+    padding-top: 250px;
 }
 
 .bar{
@@ -508,4 +506,12 @@ footer .diamond-logo img{
 
 .diff-width{
     width: 150px;
+}
+
+.not-mid{
+    margin-top: 25px;
+}
+
+.articles li{
+    margin: 25px 500px;
 }
