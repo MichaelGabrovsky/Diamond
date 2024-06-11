@@ -127,12 +127,10 @@ footer{
 }
 
 .search-bar{
-    width: 50%;
     box-sizing: border-box;
     border: none;
     border-bottom: 1px solid var(--blue);
-    width: 20%;
-    max-height: 2rem;
+    height: 2rem;
     font-size: 14px;
     width: 400px;
 }
@@ -207,7 +205,7 @@ footer .diamond-logo img{
     margin-bottom: -120px;
 }
 
-/* Dropdown Button */
+
 .dropbtn {
     background-color:var(--blue);
     color: white;
@@ -216,13 +214,13 @@ footer .diamond-logo img{
     border: none;
   }
 
-  /* The container <div> - needed to position the dropdown content */
+
   .dropdown {
     position: relative;
     display: inline-block;
   }
 
-  /* Dropdown Content (Hidden by Default) */
+
   .dropdown-content {
     display: none;
     position: absolute;
@@ -232,7 +230,7 @@ footer .diamond-logo img{
     z-index: 1;
   }
 
-  /* Links inside the dropdown */
+
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -241,13 +239,11 @@ footer .diamond-logo img{
     font-size: 14px;
   }
 
-  /* Change color of dropdown links on hover */
   .dropdown-content a:hover {background-color: #ddd;}
 
-  /* Show the dropdown menu on hover */
+
   .dropdown:hover .dropdown-content {display: block;}
 
-  /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: var(--blue);}
 
   /* https://www.w3schools.com/howto/howto_css_dropdown.asp */
@@ -274,6 +270,16 @@ footer .diamond-logo img{
     cursor: pointer;
     transition-duration: 0.4s;
 }
+
+.buy-now-button.edit {
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 10px;
+    margin: 0;
+}
+
 
 .buy-now-button:hover {
     background-color: var(--black-blue);
@@ -355,26 +361,26 @@ footer .diamond-logo img{
     width: 100%;
     max-width: 1000px;
     overflow: hidden;
-    margin: 0 auto; /* Center the carousel */
+    margin: 0 auto; 
 }
 
 .body-carousel-images {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    padding: 0; /* Remove any padding */
+    padding: 0; 
 }
 
 .body-carousel-images img {
-    width: calc(25% - 10px); /* Display 4 images at a time with margin */
+    width: calc(25% - 10px); 
     flex-shrink: 0;
-    margin: 0 5px; /* Margin to add space between images */
-    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the shadow */
+    margin: 0 5px; 
+    transition: box-shadow 0.3s ease-in-out; 
 }
 
 .body-carousel-images img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.19); /* Enhanced drop shadow effect on hover */
-    transform: scale(1.05); /* Slightly enlarge the image on hover */
-    border: 2px solid var(--blue); /* Optional: Add a border on hover to highlight the image */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.19); 
+    transform: scale(1.05); 
+    border: 2px solid var(--blue); 
 }
 
 .body-carousel-button {
@@ -409,19 +415,19 @@ footer .diamond-logo img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 5px; /* Space between image wrappers */
+    margin: 0 5px; 
 }
 
 .image-wrapper img {
-    width: 200px; /* Fixed width for images */
+    width: 200px; 
     flex-shrink: 0;
-    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for the shadow and scale */
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; 
 }
 
 .image-wrapper:hover img {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.19); /* Enhanced drop shadow effect on hover */
-    transform: scale(1.05); /* Slightly enlarge the image on hover */
-    border: 2px solid var(--blue); /* Optional: Add a border on hover to highlight the image */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.19); 
+    transform: scale(1.05); 
+    border: 2px solid var(--blue); 
 }
 
 .price-tag {
@@ -444,15 +450,20 @@ footer .diamond-logo img{
     color: var(--black-blue);
 }
 
-.box{
+.box {
     background-color: var(--light-blue);
     padding: 50px 100px 25px 100px;
-    margin: 50px 400px;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    text-align: center; /* Center the content */
 }
 
-.bigger{
+.bigger {
     margin: 10px 0;
     font-size: 20px;
+    text-align: center; /* Align labels to the left */
 }
 
 .buttons{
@@ -462,6 +473,14 @@ footer .diamond-logo img{
     background-color: var(--blue);
     border: 1px solid var(--black-blue);
     border-radius: 3px;
+    font-family: 'Rubik', sans-serif;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    background-color: var(--black-blue);
+    color: white;
 }
 
 .big-text{
@@ -474,14 +493,6 @@ footer .diamond-logo img{
 .bar{
     background-color: var(--blue);
     min-height: 15rem;
-}
-
-.button{
-    height: 32px;
-    width: 100px;
-    background-color: var(--blue);
-    border: 1px solid var(--black-blue);
-    border-radius: 3px;
 }
 
 .space{
@@ -502,6 +513,7 @@ footer .diamond-logo img{
 
 .link{
     text-decoration: none;
+    margin-left: 1rem;
 }
 
 .diff-width{
@@ -520,4 +532,26 @@ footer .diamond-logo img{
     height: 650px;
     margin-top: -600px;
     margin-left: 100px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Add gap between elements */
+    margin-top: 1rem;
+}
+
+.forgot-password-link {
+    font-size: 0.9rem;
+    color: var(--blue);
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-right: auto;
+    align-self: center;
+}
+
+
+.forgot-password-link:hover {
+    text-decoration: underline;
 }
