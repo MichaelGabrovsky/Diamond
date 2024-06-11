@@ -132,7 +132,7 @@ footer{
     border: none;
     border-bottom: 1px solid var(--blue);
     width: 20%;
-    height: 2rem;
+    max-height: 2rem;
     font-size: 14px;
     width: 400px;
 }
@@ -514,4 +514,10 @@ footer .diamond-logo img{
 
 .articles li{
     margin: 25px 500px;
+}
+
+.michael{
+    height: 650px;
+    margin-top: -600px;
+    margin-left: 100px;
 }
